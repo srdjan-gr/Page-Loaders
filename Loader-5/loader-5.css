@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=ZCOOL+KuaiLe&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: aliceblue;
+  background-image: linear-gradient(135deg, #ebebeb 0%, #b6b6b6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  display: none;
+  position: relative;
+  text-align: center;
+  width: 50vw;
+}
+
+.init {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: absolute;
+}
+
+.loader {
+  background: transparent;
+  overflow: hidden;
+  position: absolute; 
+}
+
+.init img {
+    transform: scale(0.60);
+}
+
+.loader>div {
+  height: 280px;
+  width: 280px;
+  border: 3px solid #45474b83;
+  border-top-color: #2a88e67e;
+  border-radius: 50%;
+  animation: rotation 1.2s infinite linear;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}

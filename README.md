@@ -1,0 +1,1 @@
+Win style page loader with Smilies logo 
